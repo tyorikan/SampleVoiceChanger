@@ -1,81 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Key"
+            android:text="@string/key"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <LinearLayout
-            android:id="@+id/linearLayout1"
+    <RadioGroup
+            android:id="@+id/voice_key"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
-        <SeekBar
-                android:id="@+id/sbKey"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:max="100"
-                android:paddingLeft="4pt"
-                android:paddingRight="4pt"
-                android:progress="50" />
-
-        <EditText
-                android:id="@+id/etKey"
+        <RadioButton
+                android:id="@+id/voice_lowest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.48"
-                android:clickable="false"
-                android:editable="true"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:inputType="numberDecimal" />
-    </LinearLayout>
+                android:text="@string/voice_lowest" />
 
-    <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Speed"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-        <SeekBar
-                android:id="@+id/sbSpeed"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:max="100"
-                android:paddingLeft="4pt"
-                android:paddingRight="4pt"
-                android:progress="50" />
-
-        <EditText
-                android:id="@+id/etSpeed"
+        <RadioButton
+                android:id="@+id/voice_lower"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:inputType="numberDecimal" />
-    </LinearLayout>
+                android:text="@string/voice_lower" />
+
+        <!--
+        <RadioButton
+                android:id="@+id/voice_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/voice_default" />
+                -->
+
+        <RadioButton
+                android:id="@+id/voice_higher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/voice_higher" />
+
+        <RadioButton
+                android:id="@+id/voice_very_higher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voice_very_higher" />
+
+        <RadioButton
+                android:id="@+id/voice_highest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voice_highest" />
+
+    </RadioGroup>
 
     <Button
-            android:id="@+id/btProc"
+            android:id="@+id/toggle_button"
             android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/Processing" />
+            android:text="@string/start" />
+
+    <com.radionama.samplevoicechanger.visualizer.VisualizerView
+            android:id="@+id/visualizer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/black" />
 
 </LinearLayout>
