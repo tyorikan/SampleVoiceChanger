@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Key"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <SeekBar
+                android:id="@+id/sbKey"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:paddingLeft="4pt"
+                android:paddingRight="4pt"
+                android:progress="50" />
+
+        <EditText
+                android:id="@+id/etKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:clickable="false"
+                android:editable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Speed"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <SeekBar
+                android:id="@+id/sbSpeed"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="100"
+                android:paddingLeft="4pt"
+                android:paddingRight="4pt"
+                android:progress="50" />
+
+        <EditText
+                android:id="@+id/etSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btProc"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Processing" />
+
+</LinearLayout>
