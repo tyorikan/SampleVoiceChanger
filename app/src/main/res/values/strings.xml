@@ -5,14 +5,14 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="key">声の高さ</string>
-    <string name="voice_lowest">超低い</string>
-    <string name="voice_lower">低い</string>
+    <string name="key">voice pitch</string>
+    <string name="voice_lowest">lowest voice</string>
+    <string name="voice_lower">low voice</string>
     <string name="voice_default">普通</string>
-    <string name="voice_higher">高い</string>
-    <string name="voice_very_higher">超高い</string>
-    <string name="voice_highest">異次元の高さ</string>
-    <string name="start">開始</string>
-    <string name="stop">停止</string>
+    <string name="voice_higher">high voice</string>
+    <string name="voice_very_higher">very high voice</string>
+    <string name="voice_highest">unbelievable high voice</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
 
 </resources>
